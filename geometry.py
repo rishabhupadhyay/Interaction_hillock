@@ -6,8 +6,8 @@ def linear(x1, y1, x2, y2):
     #	xstart,ystart=send(x,y)
     n = 100
     slope = (y2 - y1) / (x2 - x1)
-    xarray = [x1 + (i * slope / n)for i in range(n)]
-    yarray = [x1 + (i * slope / n)for i in range(n)]
+    xarray = [x1 + ( x2 - x1 )* i / n for i in range(n)]
+    yarray = [y1 + ( y2 - y1 )* i / n for i in range(n)]
     # print(xarray)
     return (xarray, yarray)
 
